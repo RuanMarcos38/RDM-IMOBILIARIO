@@ -1,0 +1,25 @@
+INSTALAÇÃO NA HOSTINGER - RDM CONSULTORIA IMOBILIÁRIA
+
+1) Entre no Gerenciador de Arquivos da Hostinger.
+2) Abra a pasta correta do site: public_html
+   Em algumas contas pode aparecer como: domains/seudominio.com.br/public_html
+3) Envie estes arquivos dentro da mesma pasta:
+   - index.html
+   - enviar-contato.php
+   - rdm_hero_720p_loop_8s_sem_audio.mp4
+   - rdm_hero_720p_poster.jpg
+   - .htaccess
+   - teste-email.php
+
+IMPORTANTE:
+- Não envie os arquivos apenas na pasta "My files" se ela não for a pasta pública do domínio.
+- Todos os arquivos precisam ficar juntos na mesma pasta do index.html.
+
+TESTES:
+1) Abra: https://seudominio.com.br/index.html
+2) Teste o vídeo: https://seudominio.com.br/rdm_hero_720p_loop_8s_sem_audio.mp4
+3) Teste PHP: https://seudominio.com.br/enviar-contato.php
+   Se aparecer "Método não permitido", o PHP está funcionando.
+4) Teste envio: https://seudominio.com.br/teste-email.php
+
+Se o teste de e-mail falhar, configure SMTP ou crie o e-mail contato@rdmconsultoriaimobiliaria.com.br na Hostinger.

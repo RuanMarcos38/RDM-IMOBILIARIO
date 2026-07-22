@@ -1,0 +1,20 @@
+RDM Consultoria Imobiliária - Arquivos para hospedagem
+
+Alteração aplicada:
+Menu na sequência: Início | Sobre | Lançamentos | Compras | Anunciar | Contato
+
+Arquivos:
+- index.html: site principal
+- contato.php: envio do formulário para Contato@rdmconsultoriaimobiliaria.com.br
+- .htaccess: configuração básica para hospedagem Apache/Hostinger
+
+Como subir na hospedagem:
+1. Acesse o Gerenciador de Arquivos da hospedagem.
+2. Abra a pasta public_html do domínio rdmconsultoriaimobiliaria.com.
+3. Envie estes arquivos para dentro da public_html.
+4. Se já existir um index.html antigo, substitua pelo novo.
+5. Após enviar, acesse: http://rdmconsultoriaimobiliaria.com/
+
+Observação:
+O envio do formulário depende do recurso mail() estar ativo na hospedagem.
+Caso o e-mail não chegue, configure SMTP no servidor ou solicite à hospedagem a ativação do envio PHP mail().

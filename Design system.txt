@@ -1,0 +1,311 @@
+<!-- RDM / Imóveis — Design System base · Living style guide -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System — Imóveis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ---- Cor primária — Magenta ---- */
+    --magenta-700:#8E0E81; --magenta-600:#A91599; --magenta-500:#C81DB6;
+    --magenta-400:#DB4ECD; --magenta-200:#F0A8E6; --magenta-50:#FBE9F7;
+    /* ---- Cor secundária — Limão ---- */
+    --lime-600:#9FB80F; --lime-500:#C2E018; --lime-300:#D6EC5E; --lime-50:#F4FBD2;
+    /* ---- Neutros (ink) ---- */
+    --ink-900:#16121C; --ink-700:#3A3540; --ink-500:#6E6878; --ink-400:#948FA0;
+    --ink-300:#C9C5D2; --ink-200:#E6E3EC; --ink-100:#F4F2F8; --white:#FFFFFF;
+    /* ---- Apoio / semânticas ---- */
+    --info:#3E8FD4; --success:#2BA84A; --warning:#E8A317; --error:#E03B3B;
+    /* ---- Raios ---- */
+    --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:24px; --r-pill:999px;
+    /* ---- Sombras ---- */
+    --sh-sm:0 1px 2px rgba(22,18,28,.06);
+    --sh-md:0 6px 16px rgba(22,18,28,.08);
+    --sh-lg:0 16px 40px rgba(22,18,28,.12);
+    --ring:0 0 0 3px rgba(200,29,182,.35);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--ink-100); color:var(--ink-900);
+    font-family:"Inter",system-ui,sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px}
+
+  /* ---------- Cabeçalho da doc ---------- */
+  .masthead{
+    background:var(--magenta-500); color:#fff; padding:64px 0 56px; position:relative; overflow:hidden;
+  }
+  .masthead::after{
+    content:""; position:absolute; right:-60px; top:-60px; width:280px; height:280px;
+    background:var(--lime-500); border-radius:var(--r-pill); opacity:.9; filter:blur(2px);
+  }
+  .masthead .wrap{position:relative; z-index:1}
+  .eyebrow{font-family:"Inter"; font-weight:600; font-size:13px; letter-spacing:.08em; text-transform:uppercase; opacity:.85}
+  .masthead h1{
+    font-family:"Space Grotesk"; font-weight:700; font-size:clamp(40px,7vw,60px);
+    line-height:1.02; letter-spacing:-.02em; margin:10px 0 12px; max-width:14ch;
+  }
+  .masthead p{max-width:54ch; font-size:18px; opacity:.92; margin:0}
+
+  /* ---------- Estrutura de seção ---------- */
+  section{padding:56px 0; border-bottom:1px solid var(--ink-200)}
+  .sec-label{font-weight:600; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--magenta-600); margin:0 0 6px}
+  section > .wrap > h2{font-family:"Space Grotesk"; font-weight:700; font-size:34px; letter-spacing:-.01em; margin:0 0 6px}
+  section > .wrap > .lead{color:var(--ink-500); margin:0 0 28px; max-width:62ch}
+
+  /* ---------- Cores ---------- */
+  .scale{display:grid; grid-template-columns:repeat(auto-fit,minmax(116px,1fr)); gap:12px; margin-bottom:28px}
+  .swatch{border-radius:var(--r-md); overflow:hidden; box-shadow:var(--sh-sm); background:#fff}
+  .swatch .chip{height:84px}
+  .swatch .meta{padding:10px 12px}
+  .swatch .meta b{display:block; font-size:13px; font-weight:600}
+  .swatch .meta code{font-size:12px; color:var(--ink-500); font-family:ui-monospace,monospace}
+  .role{font-size:13px; color:var(--ink-500); margin:-14px 0 16px}
+
+  /* ---------- Tipografia ---------- */
+  .type-row{display:flex; align-items:baseline; gap:20px; flex-wrap:wrap; padding:14px 0; border-bottom:1px dashed var(--ink-200)}
+  .type-row .spec{min-width:170px; font-size:13px; color:var(--ink-500); font-family:ui-monospace,monospace}
+  .d1{font-family:"Space Grotesk"; font-weight:700; font-size:56px; line-height:1.05; letter-spacing:-.02em}
+  .h2s{font-family:"Space Grotesk"; font-weight:700; font-size:40px; line-height:1.1; letter-spacing:-.015em}
+  .h3s{font-family:"Space Grotesk"; font-weight:600; font-size:30px; line-height:1.15}
+  .h4s{font-family:"Inter"; font-weight:600; font-size:22px; line-height:1.25}
+  .blg{font-family:"Inter"; font-weight:400; font-size:18px}
+  .bmd{font-family:"Inter"; font-weight:400; font-size:16px}
+  .bsm{font-family:"Inter"; font-weight:400; font-size:14px; color:var(--ink-500)}
+  .ovl{font-family:"Inter"; font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--magenta-600)}
+
+  /* ---------- Botões ---------- */
+  .btn{
+    font-family:"Inter"; font-weight:600; font-size:15px; border:1.5px solid transparent;
+    padding:12px 22px; border-radius:var(--r-pill); cursor:pointer; transition:.15s ease;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn:focus-visible{outline:none; box-shadow:var(--ring)}
+  .btn-primary{background:var(--magenta-500); color:#fff}
+  .btn-primary:hover{background:var(--magenta-600)}
+  .btn-secondary{background:var(--lime-500); color:var(--ink-900)}
+  .btn-secondary:hover{background:var(--lime-600)}
+  .btn-outline{background:transparent; color:var(--magenta-600); border-color:var(--magenta-500)}
+  .btn-outline:hover{background:var(--magenta-50)}
+  .btn-ghost{background:transparent; color:var(--ink-700)}
+  .btn-ghost:hover{background:var(--ink-100)}
+  .btn:disabled{opacity:.45; cursor:not-allowed}
+  .btn-group{display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-bottom:8px}
+
+  /* ---------- Inputs ---------- */
+  .field{max-width:380px; margin-bottom:20px}
+  .field label{display:block; font-size:14px; font-weight:600; margin-bottom:6px}
+  .field input, .field select{
+    width:100%; font-family:"Inter"; font-size:15px; padding:12px 14px;
+    border:1.5px solid var(--ink-300); border-radius:var(--r-md); background:#fff; color:var(--ink-900);
+    transition:.15s;
+  }
+  .field input::placeholder{color:var(--ink-400)}
+  .field input:focus, .field select:focus{outline:none; border-color:var(--magenta-500); box-shadow:var(--ring)}
+  .field.err input{border-color:var(--error)}
+  .field .hint{font-size:13px; color:var(--ink-500); margin-top:6px}
+  .field.err .hint{color:var(--error)}
+
+  /* ---------- Cards ---------- */
+  .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px}
+  .pcard{background:#fff; border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--sh-md); transition:.2s}
+  .pcard:hover{transform:translateY(-4px); box-shadow:var(--sh-lg)}
+  .pcard .img{height:150px; background:linear-gradient(135deg,var(--magenta-400),var(--magenta-600)); position:relative}
+  .pcard .tag{position:absolute; top:12px; left:12px; background:var(--lime-500); color:var(--ink-900); font-size:12px; font-weight:700; padding:4px 10px; border-radius:var(--r-pill)}
+  .pcard .body{padding:16px}
+  .pcard .price{font-family:"Space Grotesk"; font-weight:700; font-size:22px}
+  .pcard .where{font-size:14px; color:var(--ink-500); margin:2px 0 12px}
+  .pcard .feats{display:flex; gap:14px; font-size:13px; color:var(--ink-700); border-top:1px solid var(--ink-200); padding-top:12px}
+
+  /* ---------- Tokens (raio / sombra / espaçamento) ---------- */
+  .tok{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:16px}
+  .tok .box{background:#fff; padding:16px; box-shadow:var(--sh-sm); border-radius:var(--r-md)}
+  .tok .demo{height:64px; background:var(--magenta-100,#FBE9F7); border:1.5px solid var(--magenta-200)}
+  .tok b{font-size:14px} .tok code{font-size:12px; color:var(--ink-500); font-family:ui-monospace,monospace; display:block}
+  .space-bar{display:flex; align-items:flex-end; gap:10px; flex-wrap:wrap}
+  .space-bar .u{background:var(--magenta-500); width:34px; border-radius:4px 4px 0 0}
+  .space-bar .u span{display:block; text-align:center; font-size:11px; color:var(--ink-500); margin-top:6px; font-family:ui-monospace,monospace}
+
+  .note{background:var(--lime-50); border-left:4px solid var(--lime-500); padding:14px 16px; border-radius:0 var(--r-md) var(--r-md) 0; font-size:14px; margin-top:24px}
+  .note b{color:var(--ink-900)}
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Design System · Base</p>
+    <h1>Imóveis — identidade vibrante e conversão clara</h1>
+    <p>Tokens extraídos da identidade visual: magenta como cor-herói, limão como energia, neutros escuros para legibilidade. Pensado para landing page / app de busca de imóveis voltado ao consumidor.</p>
+  </div>
+</header>
+
+<!-- ============ CORES ============ -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">01 · Cores</p>
+    <h2>Paleta</h2>
+    <p class="lead">A combinação magenta + limão é a assinatura da marca. Magenta domina ações e marca; limão é o acento de energia (use sempre com texto escuro); neutros sustentam o conteúdo.</p>
+
+    <p class="role"><strong>Primária — Magenta.</strong> Botões principais, links, marca, estados ativos.</p>
+    <div class="scale">
+      <div class="swatch"><div class="chip" style="background:#8E0E81"></div><div class="meta"><b>Magenta 700</b><code>#8E0E81</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#A91599"></div><div class="meta"><b>Magenta 600</b><code>#A91599</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#C81DB6"></div><div class="meta"><b>Magenta 500 ★</b><code>#C81DB6</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#DB4ECD"></div><div class="meta"><b>Magenta 400</b><code>#DB4ECD</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#F0A8E6"></div><div class="meta"><b>Magenta 200</b><code>#F0A8E6</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#FBE9F7"></div><div class="meta"><b>Magenta 50</b><code>#FBE9F7</code></div></div>
+    </div>
+
+    <p class="role"><strong>Secundária — Limão.</strong> Acentos, selos, destaques, micro-interações. Nunca como texto sobre branco.</p>
+    <div class="scale">
+      <div class="swatch"><div class="chip" style="background:#9FB80F"></div><div class="meta"><b>Limão 600</b><code>#9FB80F</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#C2E018"></div><div class="meta"><b>Limão 500 ★</b><code>#C2E018</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#D6EC5E"></div><div class="meta"><b>Limão 300</b><code>#D6EC5E</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#F4FBD2"></div><div class="meta"><b>Limão 50</b><code>#F4FBD2</code></div></div>
+    </div>
+
+    <p class="role"><strong>Neutros.</strong> Texto, fundos e bordas. <em>Ink 900</em> é a cor de corpo de texto.</p>
+    <div class="scale">
+      <div class="swatch"><div class="chip" style="background:#16121C"></div><div class="meta"><b>Ink 900</b><code>#16121C</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#3A3540"></div><div class="meta"><b>Ink 700</b><code>#3A3540</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#6E6878"></div><div class="meta"><b>Ink 500</b><code>#6E6878</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#C9C5D2"></div><div class="meta"><b>Ink 300</b><code>#C9C5D2</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#E6E3EC"></div><div class="meta"><b>Ink 200</b><code>#E6E3EC</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#F4F2F8"></div><div class="meta"><b>Ink 100</b><code>#F4F2F8</code></div></div>
+    </div>
+
+    <p class="role"><strong>Apoio &amp; semânticas.</strong> Azul informativo vem da tela de produto (imagem 3). As demais para feedback de sistema.</p>
+    <div class="scale">
+      <div class="swatch"><div class="chip" style="background:#3E8FD4"></div><div class="meta"><b>Info</b><code>#3E8FD4</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#2BA84A"></div><div class="meta"><b>Sucesso</b><code>#2BA84A</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#E8A317"></div><div class="meta"><b>Alerta</b><code>#E8A317</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#E03B3B"></div><div class="meta"><b>Erro</b><code>#E03B3B</code></div></div>
+    </div>
+
+    <div class="note"><b>Acessibilidade:</b> o limão (#C2E018) sobre branco reprova em contraste — use-o só como fundo com texto escuro ou em elementos decorativos. O magenta 500 sobre branco serve para textos grandes/negrito e UI; para corpo de texto use Ink 900.</div>
+  </div>
+</section>
+
+<!-- ============ TIPOGRAFIA ============ -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">02 · Tipografia</p>
+    <h2>Fontes &amp; hierarquia</h2>
+    <p class="lead"><strong>Display:</strong> Space Grotesk (geométrica e marcante, ecoa o lettering pesado do billboard). <strong>Corpo/UI:</strong> Inter (legibilidade máxima). Alternativas próximas: Sora ou Clash Display no display; Plus Jakarta Sans no corpo.</p>
+
+    <div class="type-row"><div class="spec">H1 / Display · 56 / 700</div><div class="d1">Seu lar começa aqui</div></div>
+    <div class="type-row"><div class="spec">H2 · 40 / 700</div><div class="h2s">Encontre o imóvel certo</div></div>
+    <div class="type-row"><div class="spec">H3 · 30 / 600</div><div class="h3s">Imóveis em destaque</div></div>
+    <div class="type-row"><div class="spec">H4 · 22 / 600</div><div class="h4s">Apartamento no Centro</div></div>
+    <div class="type-row"><div class="spec">Body L · 18 / 400</div><div class="blg">Texto de apoio do hero e parágrafos de destaque, com respiro confortável.</div></div>
+    <div class="type-row"><div class="spec">Body · 16 / 400</div><div class="bmd">Corpo de texto padrão da interface e descrições de imóveis.</div></div>
+    <div class="type-row"><div class="spec">Small · 14 / 400</div><div class="bsm">Legendas, metadados e textos auxiliares.</div></div>
+    <div class="type-row"><div class="spec">Overline · 13 / 600 · CAPS</div><div class="ovl">Mais procurados</div></div>
+  </div>
+</section>
+
+<!-- ============ COMPONENTES ============ -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">03 · Componentes</p>
+    <h2>Botões</h2>
+    <p class="lead">Formato pílula reforça o tom moderno. Hierarquia clara: primário (magenta) para a ação principal, secundário (limão) para o segundo CTA, contorno e fantasma para ações de menor peso.</p>
+    <div class="btn-group">
+      <button class="btn btn-primary">Buscar imóveis</button>
+      <button class="btn btn-secondary">Anunciar imóvel</button>
+      <button class="btn btn-outline">Ver detalhes</button>
+      <button class="btn btn-ghost">Cancelar</button>
+      <button class="btn btn-primary" disabled>Desabilitado</button>
+    </div>
+    <p class="bsm">Estados: <em>hover</em> escurece o tom · <em>focus</em> exibe anel magenta (acessível por teclado) · <em>disabled</em> com 45% de opacidade.</p>
+
+    <h2 style="margin-top:48px">Inputs de formulário</h2>
+    <p class="lead">Rótulo sempre acima do campo, borda neutra que vira magenta no foco. Estado de erro com cor e mensagem objetiva.</p>
+    <div style="display:flex; gap:32px; flex-wrap:wrap">
+      <div class="field">
+        <label for="b">Bairro ou cidade</label>
+        <input id="b" type="text" placeholder="Ex.: Centro, Joinville">
+        <p class="hint">Digite o nome do bairro ou da cidade.</p>
+      </div>
+      <div class="field">
+        <label for="t">Tipo de imóvel</label>
+        <select id="t"><option>Casa</option><option>Apartamento</option><option>Terreno</option><option>Comercial</option></select>
+      </div>
+      <div class="field err">
+        <label for="e">E-mail</label>
+        <input id="e" type="email" placeholder="voce@email.com" value="email-invalido">
+        <p class="hint">Informe um e-mail válido.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:48px">Cards de imóvel</h2>
+    <p class="lead">Componente central do produto: imagem, selo de status, preço em destaque, localização e atributos. Elevação sutil que cresce no hover.</p>
+    <div class="cards">
+      <div class="pcard">
+        <div class="img"><span class="tag">Venda</span></div>
+        <div class="body">
+          <div class="price">R$ 520.000</div>
+          <div class="where">Apartamento · Centro, Joinville</div>
+          <div class="feats"><span>2 dorm.</span><span>1 vaga</span><span>68 m²</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="img" style="background:linear-gradient(135deg,var(--lime-500),var(--lime-600))"><span class="tag">Locação</span></div>
+        <div class="body">
+          <div class="price">R$ 2.400<span style="font-size:13px;color:var(--ink-500);font-family:Inter;font-weight:500">/mês</span></div>
+          <div class="where">Casa · Atiradores, Joinville</div>
+          <div class="feats"><span>3 dorm.</span><span>2 vagas</span><span>120 m²</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="img" style="background:linear-gradient(135deg,#3E8FD4,#2C6BA8)"><span class="tag">Lançamento</span></div>
+        <div class="body">
+          <div class="price">A partir de R$ 380.000</div>
+          <div class="where">Apartamento · América, Joinville</div>
+          <div class="feats"><span>1–3 dorm.</span><span>Lazer</span><span>na planta</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESTÉTICA ============ -->
+<section style="border-bottom:none">
+  <div class="wrap">
+    <p class="sec-label">04 · Estética</p>
+    <h2>Raios, sombras e espaçamento</h2>
+    <p class="lead">Arredondamentos generosos, sombras suaves e de baixa difusão, e uma escala de espaçamento em base 4 px.</p>
+
+    <h4 class="h4s" style="margin:8px 0 14px">Border-radius</h4>
+    <div class="tok" style="margin-bottom:36px">
+      <div class="box"><div class="demo" style="border-radius:8px"></div><b style="margin-top:10px;display:block">sm</b><code>8px — inputs pequenos, tags</code></div>
+      <div class="box"><div class="demo" style="border-radius:12px"></div><b style="margin-top:10px;display:block">md</b><code>12px — inputs, botões quadrados</code></div>
+      <div class="box"><div class="demo" style="border-radius:16px"></div><b style="margin-top:10px;display:block">lg</b><code>16px — cards</code></div>
+      <div class="box"><div class="demo" style="border-radius:24px"></div><b style="margin-top:10px;display:block">xl</b><code>24px — modais, blocos hero</code></div>
+      <div class="box"><div class="demo" style="border-radius:999px"></div><b style="margin-top:10px;display:block">pill</b><code>999px — botões, selos</code></div>
+    </div>
+
+    <h4 class="h4s" style="margin:8px 0 14px">Sombras</h4>
+    <div class="tok" style="margin-bottom:36px">
+      <div class="box" style="box-shadow:var(--sh-sm)"><b>sm</b><code>0 1px 2px rgba(22,18,28,.06)</code></div>
+      <div class="box" style="box-shadow:var(--sh-md)"><b>md</b><code>0 6px 16px rgba(22,18,28,.08)</code></div>
+      <div class="box" style="box-shadow:var(--sh-lg)"><b>lg</b><code>0 16px 40px rgba(22,18,28,.12)</code></div>
+      <div class="box" style="box-shadow:var(--ring)"><b>focus ring</b><code>0 0 0 3px rgba(200,29,182,.35)</code></div>
+    </div>
+
+    <h4 class="h4s" style="margin:8px 0 14px">Escala de espaçamento (base 4 px)</h4>
+    <div class="space-bar">
+      <div class="u" style="height:4px"><span>4</span></div>
+      <div class="u" style="height:8px"><span>8</span></div>
+      <div class="u" style="height:12px"><span>12</span></div>
+      <div class="u" style="height:16px"><span>16</span></div>
+      <div class="u" style="height:24px"><span>24</span></div>
+      <div class="u" style="height:32px"><span>32</span></div>
+      <div class="u" style="height:48px"><span>48</span></div>
+      <div class="u" style="height:64px"><span>64</span></div>
+    </div>
+
+    <div class="note" style="margin-top:36px"><b>Princípio de usabilidade:</b> uma única ação primária magenta por tela. Reserve o limão para chamar atenção pontual (selos, destaques). Quanto mais vibrante a paleta, mais o branco e os neutros precisam dominar a área da tela para o conteúdo respirar.</div>
+  </div>
+</section>

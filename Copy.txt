@@ -1,0 +1,254 @@
+# RDM SOLUÇÕES IMOBILIÁRIAS — Textos da Landing Page
+
+> Estrutura de seções baseada no padrão de imobiliárias de Joinville (referência: Anagê Imóveis).
+> Os campos entre `[ colchetes ]` são placeholders — substitua pelos dados reais antes de publicar.
+
+---
+
+## 1. Cabeçalho / Menu (Header)
+
+**Logo:** RDM Soluções Imobiliárias
+
+**Menu de navegação:**
+- Comprar
+- Alugar
+- Lançamentos
+- Anuncie seu Imóvel
+- Sobre a RDM
+- Blog
+- Contato
+
+**Botão de destaque:** Fale com um Corretor
+
+---
+
+## 2. Seção Hero (Topo da página)
+
+**Título principal (H1):**
+Encontre o imóvel certo para viver em Joinville e região
+
+**Subtítulo:**
+Casas, apartamentos, terrenos e imóveis comerciais com quem conhece cada bairro da cidade. Da primeira visita à assinatura do contrato, a RDM cuida de tudo com segurança e transparência.
+
+**Barra de busca (campos):**
+- [ Comprar | Alugar ]  (alternador)
+- Tipo de imóvel (Casa, Apartamento, Terreno, Comercial)
+- Bairro ou cidade
+- Faixa de preço
+- **Botão:** Buscar Imóveis
+
+**Atalhos rápidos abaixo da busca:**
+Mais procurados: Apartamentos no Centro · Casas em condomínio fechado · Imóveis até R$ 1.500/mês · Terrenos · Imóveis comerciais
+
+---
+
+## 3. Serviços Principais (3 blocos)
+
+### Bloco 1 — Comprar
+**Quer comprar seu imóvel?**
+Reunimos as melhores oportunidades de Joinville e região em um só lugar. Nossos corretores ajudam você a escolher com calma, simular o financiamento e fechar negócio com toda a segurança.
+**CTA:** Quero comprar
+
+### Bloco 2 — Alugar
+**Procurando um imóvel para alugar?**
+Processo de locação simples, rápido e sem complicação. Diversas opções de garantia e um atendimento que entende o que você precisa, do primeiro contato à entrega das chaves.
+**CTA:** Quero alugar
+
+### Bloco 3 — Anunciar
+**Tem um imóvel para vender ou alugar?**
+Anuncie com a RDM e alcance os compradores e inquilinos certos. Cuidamos da divulgação, das visitas e de toda a parte burocrática para você.
+**CTA:** Anunciar meu imóvel
+
+---
+
+## 4. Diferenciais — Por que escolher a RDM
+
+**Título da seção:**
+Por que negociar com a RDM Soluções Imobiliárias
+
+**Diferenciais (4 cards):**
+
+**Conhecimento local**
+Somos de Joinville e conhecemos cada bairro a fundo. Indicamos o imóvel certo para o seu momento, seu orçamento e o seu estilo de vida.
+
+**Segurança em cada etapa**
+Contratos claros, documentação revisada e processos transparentes. Você fecha negócio com tranquilidade, sabendo que está tudo em ordem.
+
+**Atendimento de verdade**
+Nada de robô do começo ao fim. Você conversa com corretores que ouvem o que você precisa e acompanham você até a assinatura.
+
+**Mais visibilidade para o seu imóvel**
+Seu imóvel anunciado no nosso site e nos principais portais do país, com fotos de qualidade e divulgação ativa.
+
+---
+
+## 5. Imóveis em Destaque
+
+**Título da seção:**
+Imóveis em destaque
+
+**Texto de apoio:**
+Selecionamos algumas das melhores oportunidades disponíveis agora. Novos imóveis entram toda semana — vale a pena voltar sempre.
+
+**Card de imóvel (modelo a se repetir):**
+- [ Foto do imóvel ]
+- **Tipo + bairro:** [ Apartamento — Bairro Centro ]
+- **Preço:** R$ [ valor ]
+- **Detalhes:** [ 2 dormitórios · 1 vaga · 68 m² ]
+- **Selo:** [ Venda / Locação / Lançamento ]
+- **Botão:** Ver detalhes
+
+**Botão geral:** Ver todos os imóveis
+
+---
+
+## 6. Busca por Categorias
+
+**Título da seção:**
+Encontre por categoria
+
+**Categorias (ícone + nome):**
+- Casas em condomínio fechado
+- Apartamentos mobiliados
+- Imóveis comerciais
+- Terrenos e lotes
+- Imóveis até R$ 1.500/mês
+- Galpões e barracões
+- Imóveis de alto padrão
+- Lançamentos
+
+---
+
+## 7. Sobre a RDM (Institucional)
+
+**Título da seção:**
+Conheça a RDM Soluções Imobiliárias
+
+**Texto principal:**
+A RDM Soluções Imobiliárias nasceu em Joinville com um propósito simples: tornar a compra, a venda e o aluguel de imóveis uma experiência leve, segura e sem dor de cabeça. Unimos o conhecimento de quem vive a cidade ao atendimento próximo que faz a diferença em cada negociação.
+
+Mais do que intermediar negócios, ajudamos pessoas a realizarem o sonho da casa própria, a encontrarem o ponto comercial ideal e a fazerem bons investimentos. Cada cliente é tratado de forma única, do primeiro contato até depois da entrega das chaves.
+
+**Missão:**
+Oferecer soluções imobiliárias com qualidade, agilidade e segurança, conectando pessoas aos imóveis certos em Joinville e região.
+
+**Visão:**
+Ser reconhecida como uma das principais referências em serviços imobiliários do norte de Santa Catarina.
+
+**Valores:**
+- Honestidade e transparência
+- Profissionalismo
+- Atendimento humano
+- Compromisso com o cliente
+- Aperfeiçoamento contínuo
+
+**Números (placeholders — ajuste conforme a realidade):**
+- [ X ] imóveis na carteira
+- [ X ] anos de experiência no mercado de Joinville
+- [ X ] famílias atendidas
+- [ X ] bairros cobertos
+
+---
+
+## 8. Depoimentos de Clientes
+
+**Título da seção:**
+O que dizem nossos clientes
+
+**Depoimento (modelo a se repetir):**
+> "[ Texto do depoimento do cliente — ex.: Encontrei meu apartamento em menos de duas semanas. Atendimento atencioso do início ao fim. ]"
+> — [ Nome do cliente ], [ bairro/cidade ]
+
+*(Sugestão: incluir de 3 a 4 depoimentos reais com nome e, se possível, foto.)*
+
+---
+
+## 9. Anuncie seu Imóvel (CTA de captação)
+
+**Título:**
+Tem um imóvel? Anuncie com a RDM
+
+**Texto:**
+Quer vender ou alugar com rapidez e segurança? Avaliamos seu imóvel, criamos um anúncio profissional e divulgamos para quem realmente tem interesse. Você cuida da sua vida, a gente cuida do negócio.
+
+**Itens de apoio (3 bullets):**
+- Avaliação gratuita do seu imóvel
+- Divulgação no nosso site e nos maiores portais
+- Acompanhamento de visitas e negociação
+
+**CTA:** Quero anunciar meu imóvel
+**Botão secundário:** Solicitar avaliação gratuita
+
+---
+
+## 10. Blog / Dicas
+
+**Título da seção:**
+Dicas e novidades do mercado imobiliário
+
+**Texto de apoio:**
+Conteúdo para você decidir melhor: financiamento, documentação, tendências de Joinville e tudo que envolve comprar, vender ou alugar um imóvel.
+
+**Card de post (modelo):**
+- [ Imagem ]
+- **Título:** [ Ex.: Como funciona o financiamento imobiliário em 2026 ]
+- **Resumo:** [ Linha curta sobre o conteúdo ]
+- **Link:** Ler artigo
+
+**Botão geral:** Ver todos os artigos
+
+---
+
+## 11. Contato
+
+**Título da seção:**
+Fale com a RDM
+
+**Texto:**
+Precisa falar com a gente? Preencha o formulário ou use um dos nossos canais de atendimento. Estamos prontos para ajudar você a encontrar a melhor solução imobiliária.
+
+**Formulário (campos):**
+- Nome completo
+- E-mail
+- Telefone / WhatsApp
+- Assunto (Comprar / Alugar / Anunciar / Outro)
+- Mensagem
+- **Botão:** Enviar mensagem
+
+**Dados de contato (placeholders):**
+- **Endereço:** [ Rua, número — Bairro — Joinville (SC) — CEP ]
+- **WhatsApp:** [ (47) 9 XXXX-XXXX ]
+- **Telefone:** [ (47) XXXX-XXXX ]
+- **E-mail:** [ contato@rdmimoveis.com.br ]
+- **CRECI:** [ CRECI/SC nº XXXXX ]
+
+**Horário de atendimento:**
+Segunda a sexta, das 8h às 18h · Sábado, das 8h às 12h
+
+---
+
+## 12. Rodapé (Footer)
+
+**Sobre:**
+RDM Soluções Imobiliárias — sua imobiliária em Joinville e região. Compra, venda e locação com segurança e atendimento de verdade.
+
+**Colunas de links:**
+- **Imóveis:** Comprar · Alugar · Lançamentos · Imóveis comerciais
+- **Institucional:** Sobre a RDM · Blog · Trabalhe conosco · Anuncie seu imóvel
+- **Atendimento:** Contato · WhatsApp · Política de Privacidade · Termos de Uso
+
+**Redes sociais:** Instagram · Facebook · LinkedIn · YouTube
+
+**Linha final:**
+© 2026 RDM Soluções Imobiliárias. Todos os direitos reservados. · CRECI/SC [ nº ] · CNPJ [ nº ]
+
+**Aviso de cookies:**
+Utilizamos cookies para melhorar a sua experiência e personalizar conteúdos. Ao continuar navegando, você concorda com a nossa Política de Privacidade.
+
+---
+
+### Observações para a etapa de desenvolvimento
+- A ordem das seções segue o padrão de conversão de imobiliárias: **busca → serviços → prova de valor → destaques → institucional → captação → contato**.
+- O **alternador Comprar/Alugar** no hero é o elemento mais importante da página — vale dar destaque visual.
+- Recomendo um **botão flutuante de WhatsApp** fixo, já que a captação por WhatsApp costuma ter ótima conversão nesse segmento.
+- Os blocos de **depoimentos** e **números** aumentam muito a credibilidade — priorize preencher com dados reais assim que possível.
